@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+ <div id="wrapper" class="wrapper">
+ <h1>Добавить новую задачу:</h1>
+ <input type="text" name="list" placeholder="Введите текст..." id="input" class="main" size="35px"> 
+ <button class="addNewList" onclick="createNewTaskElement()">Добавить</button>
+ <h2>Невыполненные задачи:</h2>
+   <ul id="ul" class="ul">
+    <li class="editing">
+      <input type="checkbox" class="checkbox"><label>Задача №1</label> 
+      <input type="text">
+      <span class="close">Удалить</span>
+      <button type="button" class="edit">Изменить</button> 
+    </li> 
+    <li class="editing">
+      <input type="checkbox" class="checkbox"><label>Задача №2</label> 
+      <input type="text">
+      <span class="close">Удалить</span>
+      <button type="button" class="edit">Изменить</button> 
+    </li> 
+    <li class="editing">
+      <input type="checkbox" class="checkbox"><label>Задача №3</label> 
+      <input type="text">
+      <span class="close">Удалить</span>
+      <button type="button" class="edit">Изменить</button> 
+    </li> 
+  </ul>
+  <h3>Выполненные задачи:</h3>
+  <ul id="done" class="done">  
+  </ul>
+  </div>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
